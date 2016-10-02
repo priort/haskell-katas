@@ -45,7 +45,6 @@ rotate :: (Int -> Int -> Int) -> AlphaChar -> AlphaChar -> Char
 rotate directionFunc (AlphaChar keywordChar) (AlphaChar c) = 
   chr (ordA c + mod ((ord c - ordA c) `directionFunc` numShiftPlaces keywordChar) alphabetLength) 
 
-
 numShiftPlaces :: Char -> Int 
 numShiftPlaces keywordC = (ord . toLower $ keywordC) - ord 'a'
 
