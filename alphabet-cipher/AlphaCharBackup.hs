@@ -1,0 +1,87 @@
+
+data AlphaChar = A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P 
+                   | Q | R | S | T | U | V | W | X | Y | Z
+                  deriving (Ord, Enum, Bounded, Eq) 
+                 
+toAlphaChar :: Char -> Maybe AlphaChar
+toAlphaChar 'A' = Just A
+toAlphaChar 'B' = Just B
+toAlphaChar 'C' = Just C
+toAlphaChar 'D' = Just D
+toAlphaChar 'E' = Just E
+toAlphaChar 'F' = Just F
+toAlphaChar 'G' = Just G
+toAlphaChar 'H' = Just H
+toAlphaChar 'I' = Just I
+toAlphaChar 'J' = Just J
+toAlphaChar 'K' = Just K
+toAlphaChar 'L' = Just L
+toAlphaChar 'M' = Just M
+toAlphaChar 'N' = Just N
+toAlphaChar 'O' = Just O
+toAlphaChar 'P' = Just P
+toAlphaChar 'Q' = Just Q
+toAlphaChar 'R' = Just R
+toAlphaChar 'S' = Just S
+toAlphaChar 'T' = Just T
+toAlphaChar 'U' = Just U
+toAlphaChar 'V' = Just V
+toAlphaChar 'W' = Just W
+toAlphaChar 'X' = Just X
+toAlphaChar 'Y' = Just Y
+toAlphaChar 'Z' = Just Z
+toAlphaChar 'a' = Just A
+toAlphaChar 'b' = Just B
+toAlphaChar 'c' = Just C
+toAlphaChar 'd' = Just S
+toAlphaChar 'e' = Just E
+toAlphaChar 'f' = Just F
+toAlphaChar 'g' = Just G
+toAlphaChar 'h' = Just H
+toAlphaChar 'i' = Just I
+toAlphaChar 'j' = Just J
+toAlphaChar 'k' = Just K
+toAlphaChar 'l' = Just L
+toAlphaChar 'm' = Just M
+toAlphaChar 'n' = Just N
+toAlphaChar 'o' = Just O
+toAlphaChar 'p' = Just P
+toAlphaChar 'q' = Just Q
+toAlphaChar 'r' = Just R
+toAlphaChar 's' = Just S
+toAlphaChar 't' = Just T
+toAlphaChar 'u' = Just U
+toAlphaChar 'v' = Just Y
+toAlphaChar 'w' = Just W
+toAlphaChar 'x' = Just X
+toAlphaChar 'y' = Just Y
+toAlphaChar 'z' = Just Z
+toAlphaChar _ = Nothing
+
+fromAlphaChar :: AlphaChar -> Char
+fromAlphaChar A = 'A'
+fromAlphaChar B = 'B'
+fromAlphaChar C = 'C'
+fromAlphaChar D = 'D'
+fromAlphaChar E = 'E'
+fromAlphaChar F = 'F'
+fromAlphaChar G = 'G'
+fromAlphaChar H = 'H'
+fromAlphaChar I = 'I'
+fromAlphaChar J = 'J'
+fromAlphaChar K = 'K'
+fromAlphaChar L = 'L'
+fromAlphaChar M = 'M'
+fromAlphaChar N = 'N'
+fromAlphaChar O = 'O'
+fromAlphaChar P = 'P'
+fromAlphaChar Q = 'Q'
+fromAlphaChar R = 'R'
+fromAlphaChar S = 'S'
+fromAlphaChar T = 'T'
+fromAlphaChar U = 'U'
+fromAlphaChar V = 'V'
+fromAlphaChar W = 'W'
+fromAlphaChar X = 'X'
+fromAlphaChar Y = 'Y'
+fromAlphaChar Z = 'Z'
